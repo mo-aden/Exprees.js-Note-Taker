@@ -20,6 +20,7 @@ router.post("/api/notes", (req, res) => {
   res.json(notes);
 });
 
+//Deletes the notes based on it ID
 router.delete("/api/notes/:id", (req, res) => {
   const notes = JSON.parse(fs.readFileSync(__dirname + "/../db/db.json"));
 
@@ -34,4 +35,5 @@ router.delete("/api/notes/:id", (req, res) => {
   fs.writeFileSync(__dirname + "/../db/db.json", JSON.stringify(newNote));
   res.json(newNote);
 });
+
 module.exports = router;
