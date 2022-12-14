@@ -16,7 +16,7 @@ SO THAT I can organize my thoughts and keep track of tasks I need to complete
 
 - Create note and save note.
 
-- Delete note and create notes.
+- View notes and delete notes.
 
 To run the application, follow the commands below.
 
