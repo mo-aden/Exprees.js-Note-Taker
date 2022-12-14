@@ -8,6 +8,7 @@ router.get("/api/notes", (req, res) => {
   res.json(notes);
 });
 
+//Gets the user inputs & pushes them to json file
 router.post("/api/notes", (req, res) => {
   const notes = JSON.parse(fs.readFileSync(__dirname + "/../db/db.json"));
 
